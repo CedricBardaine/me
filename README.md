@@ -1,6 +1,10 @@
 # me
 
-## Project setup
+This is my new personal website.
+
+## Vue infos
+
+### Project setup
 ```
 npm install
 ```
