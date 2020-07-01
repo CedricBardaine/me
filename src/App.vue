@@ -1,15 +1,20 @@
 <template>
-    <div id="app" class="nightMode">
+    <div id="app" :class="{nightMode: isNightModeOn , lightMode: !isNightModeOn}">
         <b-container fluid style="height: 100%;">
             
             <b-row style="height: 100%;">
                 <b-col cols="2" id="navMenu">
                     
                     <div class="menuLink" v-on:click="currentPage = 'home'">
-                        <router-link class="menuLink" v-bind:class="{menuLink_current: currentPage == 'home'}" to="/">Home</router-link> <br>
+                        <router-link class="menuLink" v-bind:class="{menuLink_current: currentPage == 'home'}" to="/"> <b-icon class="bigIcon" icon="house-fill"></b-icon> </router-link> <br>
                     </div>
                     <div class="menuLink" v-on:click="currentPage = 'about'">
                         <router-link class="menuLink" v-bind:class="{menuLink_current: currentPage == 'about'}" to="/about">About</router-link> <br>
+                    </div>
+
+                    <div @click="switchMode" class="switchBtn">
+                        <b-icon v-if="isNightModeOn"    class="bigIcon" icon="sun"></b-icon>
+                        <b-icon v-else                  class="bigIcon" icon="moon"></b-icon>
                     </div>
                     
                 </b-col>
@@ -31,13 +36,18 @@
     export default {
         data() {
             return {
-                currentPage: 'coucou',
+                currentPage: 'home',
+                isNightModeOn: true,
             }
         },
         computed: {
             
         },
-        methods: {},
+        methods: {
+            switchMode() {
+                this.isNightModeOn = !this.isNightModeOn ; 
+            },
+        },
         watch: {
             currentPage: (val) => {
                 this.currentPage = this.currentPage;
@@ -91,6 +101,14 @@
     }
     .menuLink_current {
         color: $color-secondary;
+    }
+
+
+    .bigIcon {
+        font-size: 2rem;
+    }
+    .switchBtn {
+        color: $color-white;
     }
     
 </style>
