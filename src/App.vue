@@ -7,17 +7,18 @@
                     
                     <div class="menuLink" v-on:click="currentPage = 'home'">
                         <router-link class="menuLink" v-bind:class="{menuLink_current: currentPage == 'home'}" to="/"> 
+                        <!-- In order to make the icon bigger when current page, it must has a :active css class dedicated because the normal fon-size is 2rem and the :active of menu item make it 2rem si we don't see for the moment, but it's cool. -->
                             <!-- <b-icon class="bigIcon" icon="house-fill"></b-icon>  -->
-                                <font-awesome-icon class="bigIcon" icon="home" />
-                          </router-link> <br>
+                            <font-awesome-icon class="bigIcon" icon="home" />
+                        </router-link> <br>
                     </div>
                     <div class="menuLink" v-on:click="currentPage = 'about'">
                         <router-link class="menuLink" v-bind:class="{menuLink_current: currentPage == 'about'}" to="/about">About</router-link> <br>
                     </div>
-
+                    
                     <div @click="switchMode" class="switchBtn">
                         <b-icon v-if="isNightModeOn"    class="bigIcon" icon="sun"></b-icon>
-                        <b-icon v-else                  class="bigIcon" icon="moon"></b-icon>
+                        <b-icon v-else                  class="bigIcon iconDark" icon="moon"></b-icon>
                     </div>
                     
                 </b-col>
@@ -95,25 +96,28 @@
         padding-bottom: 1rem;
     }
     .menuLink:hover {
-        color: $color-secondary;
+        color: $color-black;
         text-decoration: none;
     }
     .menuLink:active {
-        color: $color-secondary;
+        color: $color-black;
         text-decoration: none;
     }
     .menuLink_current {
-        color: $color-secondary;
+        font-size: $fontSize-default*2 !important;
     }
-
-
+    
+    
     .bigIcon {
         font-size: 2rem;
     }
     .switchBtn {
         color: $color-white;
     }
-
+    .iconDark {
+        color: $color-black;
+    }
+    
     .currentPage {
         padding-top: 1rem;
         padding-bottom: 1rem;
