@@ -121,6 +121,7 @@
     .currentPage {
         padding-top: 1rem;
         padding-bottom: 1rem;
+        height: 100%;
     }
     
 </style>
