@@ -3,17 +3,7 @@ import VueRouter, { RouteConfig } from 'vue-router'
 import PersonalHomeView from '@/views/PersonalHome.vue'
 
 
-// FontAwesome
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret, faCat, faHome } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faUserSecret, faCat, faHome)
-
-Vue.component('font-awesome-icon', FontAwesomeIcon)
-
-// was in Fontawesome main.js example
-Vue.config.productionTip = false
 
 
 
