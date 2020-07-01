@@ -3,7 +3,6 @@ import VueRouter, { RouteConfig } from 'vue-router'
 import PersonalHomeView from '@/views/PersonalHome.vue'
 
 
-
 // FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret, faCat, faHome } from '@fortawesome/free-solid-svg-icons'
@@ -33,6 +32,11 @@ Vue.use(VueRouter)
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/cat',
+    name: 'Cat',
+    component: () => import('@/components/Cat.vue')
   }
 ]
 
