@@ -1,14 +1,30 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import Home from '../views/Home.vue'
+import PersonalHomeView from '@/views/PersonalHome.vue'
+
+
+
+// FontAwesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret, faCat, faHome } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faUserSecret, faCat, faHome)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+// was in Fontawesome main.js example
+Vue.config.productionTip = false
+
+
 
 Vue.use(VueRouter)
 
   const routes: Array<RouteConfig> = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'PersonalHomeView',
+    component: PersonalHomeView
   },
   {
     path: '/about',

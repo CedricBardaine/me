@@ -6,7 +6,10 @@
                 <b-col cols="2" id="navMenu">
                     
                     <div class="menuLink" v-on:click="currentPage = 'home'">
-                        <router-link class="menuLink" v-bind:class="{menuLink_current: currentPage == 'home'}" to="/"> <b-icon class="bigIcon" icon="house-fill"></b-icon> </router-link> <br>
+                        <router-link class="menuLink" v-bind:class="{menuLink_current: currentPage == 'home'}" to="/"> 
+                            <!-- <b-icon class="bigIcon" icon="house-fill"></b-icon>  -->
+                                <font-awesome-icon class="bigIcon" icon="home" />
+                          </router-link> <br>
                     </div>
                     <div class="menuLink" v-on:click="currentPage = 'about'">
                         <router-link class="menuLink" v-bind:class="{menuLink_current: currentPage == 'about'}" to="/about">About</router-link> <br>
@@ -20,7 +23,7 @@
                 </b-col>
                 
                 <b-col cols="10">
-                    <b-container class="">
+                    <b-container class="currentPage">
                         <router-view/>
                     </b-container>
                 </b-col>
@@ -109,6 +112,11 @@
     }
     .switchBtn {
         color: $color-white;
+    }
+
+    .currentPage {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     
 </style>
