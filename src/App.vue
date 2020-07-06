@@ -27,6 +27,16 @@
                     </span>
                 </router-link> <br>
             </div>
+                <div class="menuLink">
+                    <router-link 
+                    class="menuLink" 
+                    v-bind:class="{menuLink_current: currentPage == 'ContactMe'}" 
+                    to="/ContactMe">
+                    <span v-on:click="currentPage = 'ContactMe'">
+                        Contact me
+                    </span>
+                </router-link> <br>
+            </div>
             
             <div class="switchBtn">
                 <b-icon @click="switchMode" v-if="isNightModeOn"    class="bigIcon" icon="sun"></b-icon>
@@ -116,7 +126,7 @@
         text-decoration: none;
     }
     .menuLink_current {
-        font-size: $fontSize-default*2 !important;
+        font-size: $fontSize-default*1.5 !important;
     }
     
     

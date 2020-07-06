@@ -10,3 +10,12 @@ $color-black: #2C3E50;
 $color-white: #FFFFFF;
 
 $fontSize-default: 1rem ; 
+
+
+
+a {
+    color: $color-primary
+}
+a:hover {
+    color: $color-secondary
+}
