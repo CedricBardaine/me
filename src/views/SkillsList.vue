@@ -8,7 +8,7 @@
         <div class="ced-contentBlock">
             <input class="ced-rangeInput" type="range" min="1" max="4" step="1" v-model="level">
             
-            <p>Au niveau {{level}}, les compétences qui s'affichent sont :</p>
+            <p>Au niveau <span class="ced-important">{{level}}</span>, les compétences qui s'affichent sont :</p>
             <p v-if="level >= 1">
                 des compétences que je maîtrise particulièrement, je les utilise régulièrement et je suis à mon aise avec elles. 
             </p>
@@ -19,7 +19,7 @@
                 Ainsi que des compétences que j'ai déjà utilisé une ou plusieurs fois. 
             </p>
             <p v-if="level >= 4">
-                Mais aussi compétences que j'ai déjà étudié, ou pour lesquelles j'ai déjà fait de la veille. 
+                Mais aussi compétences que j'ai déjà étudiées, ou pour lesquelles j'ai déjà fait de la veille. 
             </p>
         </div>
 
@@ -30,6 +30,32 @@
             </div>
             <br><br> -->
             <div class="ced-skill" v-for="(item, index) in filteredSkills" :key="index">
+                <font-awesome-icon v-if="item.faIcon" :icon="['fab', item.faIcon]" />  {{item.name}}
+            </div>
+        </div>
+
+        <div class="ced-contentBlock">
+            <h2>Frameworks et technos</h2>
+            <div class="ced-skill" v-for="(item, index) in filteredFramsAndTechs" :key="index">
+                <font-awesome-icon v-if="item.faIcon" :icon="['fab', item.faIcon]" />  {{item.name}}
+            </div>
+        </div>
+        
+
+        <br>
+        <hr class="ced-hr">
+
+        <div class="ced-contentBlock">
+            <h2>Connaissances IT</h2>
+            <div class="ced-skill" v-for="(item, index) in myITKnowledge" :key="index">
+                <font-awesome-icon v-if="item.faIcon" :icon="['fab', item.faIcon]" />  {{item.name}}
+            </div>
+        </div>
+
+
+        <div class="ced-contentBlock">
+            <h2>IDEs & logiciels de développement</h2>
+            <div class="ced-skill" v-for="(item, index) in myIDEs" :key="index">
                 <font-awesome-icon v-if="item.faIcon" :icon="['fab', item.faIcon]" />  {{item.name}}
             </div>
         </div>
@@ -53,6 +79,12 @@ export default {
              */
             skills: importedSkills,
             myLanguages: importedSkills.languages,
+            myFrameworksAndTechnos: importedSkills.frameworksAndTechnos,
+            myITKnowledge: importedSkills.ITKnowledge,
+            myIDEs: importedSkills.IDEsAndDevSoftwares,
+            // myHLanguages: importedSkills.langues,
+            // myOthers: importedSkills.others,
+
         }
     },
     computed: {
@@ -62,7 +94,29 @@ export default {
             })
             console.log(ret);
             return ret ; 
-        }
+        },
+        filteredFramsAndTechs() {
+            let ret = this.myFrameworksAndTechnos.filter( (e) => {
+                return e.level <= this.level ; 
+            })
+            console.log(ret);
+            return ret ; 
+        },
+        filteredITKnowledge() {
+            let ret = this.myITKnowledge.filter( (e) => {
+                return e.level <= this.level ; 
+            })
+            console.log(ret);
+            return ret ; 
+        },
+        filteredIDEs() {
+            let ret = this.myIDEs.filter( (e) => {
+                return e.level <= this.level ; 
+            })
+            console.log(ret);
+            return ret ; 
+        },
+
     },
 }
 </script>

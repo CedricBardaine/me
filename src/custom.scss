@@ -12,7 +12,7 @@ $color-white: #FFFFFF;
 $fontSize-default: 1rem ; 
 
 html {
-    background-color: $color-black
+    background-color: $color-black;   
 }
 
 a {
@@ -75,4 +75,16 @@ a:hover {
 
   .ced-rangeInput {
       direction: rtl !important;
+  }
+
+  hr.ced-hr {
+     border: solid 2px;
+     border-radius: 9000px; 
+  }
+
+  .ced-important {
+   color: $color-secondary;
+   font-size: $fontSize-default*1.2;
+   margin: $fontSize-default*0.5;
+   font-weight: bold;
   }

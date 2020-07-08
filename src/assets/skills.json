@@ -92,5 +92,321 @@
         }
         
         
+    ],
+    "frameworksAndTechnos": [
+        {
+            "name": "Ajax",
+            "faIcon": "",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "Android Studio",
+            "faIcon": "android",
+            "level": 1,
+            "label": [""]
+        },
+        {
+            "name": "Angular",
+            "faIcon": "angular",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "AngularJS",
+            "faIcon": "angular",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "Ant",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "Bootsrap",
+            "faIcon": "bootstrap",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "ChartJS",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "Cordova",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "Docker",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "Git",
+            "faIcon": "git-alt",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "GitHub",
+            "faIcon": "github",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "GitLab",
+            "faIcon": "gitlab",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "Gradle",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "JavaServer Pages",
+            "faIcon": "java",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "JUnit",
+            "faIcon": "java",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "Jupyter Notebook",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "MongoDB",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "NodeJS",
+            "faIcon": "node-js",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "PlantUML",
+            "faIcon": "",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "React",
+            "faIcon": "react",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "ReactJS",
+            "faIcon": "react",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "Symfony",
+            "faIcon": "symfony",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "TensorFLow",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "VueJS",
+            "faIcon": "vue-js",
+            "level": 2,
+            "label": ["fav"]
+        },
+        {
+            "name": "WordPress",
+            "faIcon": "",
+            "level": 2,
+            "label": [""]
+        }
+    ],
+    "ITKnowledge": [
+        {
+            "name": "Bases de données",
+            "faIcon": "",
+            "level": 1,
+            "label": [""]
+        },
+        {
+            "name": "UML",
+            "faIcon": "",
+            "level": 1,
+            "label": [""]
+        },
+        {
+            "name": "Meurise",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "Linux",
+            "faIcon": "linux",
+            "level": 1,
+            "label": [""]
+        },
+        {
+            "name": "Administration système",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "Deep learning",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "Agile Scrum",
+            "faIcon": "",
+            "level": 1,
+            "label": [""]
+        },
+        {
+            "name": "Agile Kanban",
+            "faIcon": "",
+            "level": 1,
+            "label": [""]
+        },
+        {
+            "name": "Droit du numérique",
+            "faIcon": "",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "Gestion de projet",
+            "faIcon": "",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "Ergonomie",
+            "faIcon": "",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "Communication",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        }
+    ],
+    "IDEsAndDevSoftwares": [
+        {
+            "name": "Atom",
+            "faIcon": "",
+            "level": 1,
+            "label": [""]
+        },
+        {
+            "name": "Eclipse",
+            "faIcon": "",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "MySQL Workbench",
+            "faIcon": "",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "Notepad++",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "PHPMyAdmin",
+            "faIcon": "",
+            "level": 1,
+            "label": [""]
+        },
+        {
+            "name": "SourceTree",
+            "faIcon": "sourcetree",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "Visual Studio",
+            "faIcon": "",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "Visual Studio Code",
+            "faIcon": "",
+            "level": 1,
+            "label": ["fav"]
+        }
+    ],
+    "langues": [
+        {
+            "name": "Français",
+            "url": "@/assets/icons/fr.svg"
+        },
+        {
+            "name": "Anglais",
+            "url": "@/assets/icons/en.svg"
+        },
+        {
+            "name": "Allemand",
+            "url": "@/assets/icons/de.svg"
+        }
+    ],
+    "others": [
+        {
+            "name": "Adobe Photoshop",
+            "faIcon": "",
+            "level": 2,
+            "label": ["adobe"]
+        },
+        {
+            "name": "Adobe Premiere Pro",
+            "faIcon": "",
+            "level": 3,
+            "label": ["adobe"]
+        },
+        {
+            "name": "Adobe After Effect",
+            "faIcon": "",
+            "level": 3,
+            "label": ["adobe"]
+        },
+        {
+            "name": "Adobe Illustrator",
+            "faIcon": "",
+            "level": 3,
+            "label": ["adobe"]
+        }
     ]
 }
