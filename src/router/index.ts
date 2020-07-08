@@ -27,7 +27,17 @@ Vue.use(VueRouter)
     path: '/cat',
     name: 'Cat',
     component: () => import('@/components/Cat.vue')
-  }
+  },
+  {
+    path: '/ContactMe',
+    name: 'ContactMe',
+    component: () => import('@/views/ContactMe.vue')
+  },
+  {
+    path: '/SkillsList',
+    name: 'SkillsList',
+    component: () => import('@/views/SkillsList.vue')
+  },
 ]
 
 const router = new VueRouter({

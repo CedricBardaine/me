@@ -10,3 +10,81 @@ $color-black: #2C3E50;
 $color-white: #FFFFFF;
 
 $fontSize-default: 1rem ; 
+
+html {
+    background-color: $color-black;   
+}
+
+a {
+    color: $color-primary
+}
+a:hover {
+    color: $color-secondary
+}
+
+.centerMe {
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.ced-btn {
+    background-color: $color-primary ;
+}
+.ced-btn:hover {
+    background-color: $color-secondary ;
+}
+.ced-btn:focus {
+    background-color: $color-primary ;
+}
+
+.ced-popup {
+    color: #2C3E50 ; 
+    font-weight: bold;
+    font-size: $fontSize-default*1.2;
+    
+    border: $color-secondary solid ;
+    background: $color-secondary ;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5); 
+    margin: 0.5rem;
+    padding: 1rem;;
+    
+    width: fit-content;
+}
+
+.ced-contentBlock {
+    padding-bottom: 3rem; 
+  }
+
+  .ced-skill {
+      color: $color-primary;
+      font-size: $fontSize-default*1.2;
+
+      border: $color-primary solid 1px;
+      display: inline-block;
+      border-radius: 9000px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+
+      margin: 0.5rem
+  }
+
+  .ced-rangeInput {
+      direction: rtl !important;
+  }
+
+  hr.ced-hr {
+     border: solid 2px;
+     border-radius: 9000px; 
+  }
+
+  .ced-important {
+   color: $color-secondary;
+   font-size: $fontSize-default*1.2;
+   margin: $fontSize-default*0.5;
+   font-weight: bold;
+  }
