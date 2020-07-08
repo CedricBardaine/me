@@ -33,7 +33,17 @@
                     v-bind:class="{menuLink_current: currentPage == 'ContactMe'}" 
                     to="/ContactMe">
                     <span v-on:click="currentPage = 'ContactMe'">
-                        Contact me
+                        Contact
+                    </span>
+                </router-link> <br>
+            </div>
+                <div class="menuLink">
+                    <router-link 
+                    class="menuLink" 
+                    v-bind:class="{menuLink_current: currentPage == 'SkillsList'}" 
+                    to="/SkillsList">
+                    <span v-on:click="currentPage = 'SkillsList'">
+                        Compétences
                     </span>
                 </router-link> <br>
             </div>
@@ -115,7 +125,7 @@
     
     .menuLink {
         color: $color-white;
-        padding-bottom: 1rem;
+        margin-bottom: 1rem;
     }
     .menuLink:hover {
         color: $color-black;

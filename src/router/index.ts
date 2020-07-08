@@ -32,7 +32,12 @@ Vue.use(VueRouter)
     path: '/ContactMe',
     name: 'ContactMe',
     component: () => import('@/views/ContactMe.vue')
-  }
+  },
+  {
+    path: '/SkillsList',
+    name: 'SkillsList',
+    component: () => import('@/views/SkillsList.vue')
+  },
 ]
 
 const router = new VueRouter({

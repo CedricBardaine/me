@@ -57,3 +57,22 @@ a:hover {
 .ced-contentBlock {
     padding-bottom: 3rem; 
   }
+
+  .ced-skill {
+      color: $color-primary;
+      font-size: $fontSize-default*1.2;
+
+      border: $color-primary solid 1px;
+      display: inline-block;
+      border-radius: 9000px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+
+      margin: 0.5rem
+  }
+
+  .ced-rangeInput {
+      direction: rtl !important;
+  }

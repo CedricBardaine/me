@@ -1,0 +1,96 @@
+{
+    "languages": [
+        {
+            "name": "Java SE",
+            "faIcon": "java",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "Java EE",
+            "faIcon": "java",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "HTML",
+            "faIcon": "",
+            "level": 1,
+            "label": [""]
+        },
+        {
+            "name": "CSS",
+            "faIcon": "",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "PHP",
+            "faIcon": "",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "Javascript",
+            "faIcon": "js-square",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "Typescript",
+            "faIcon": "",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "SQL",
+            "faIcon": "",
+            "level": 1,
+            "label": [""]
+        },
+        {
+            "name": "MySQL",
+            "faIcon": "",
+            "level": 1,
+            "label": ["fav"]
+        },
+        {
+            "name": "PostgreSQL",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "Bash",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "Python",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "C++",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
+            "name": "XML",
+            "faIcon": "",
+            "level": 2,
+            "label": [""]
+        },
+        {
+            "name": "Assembleur8086",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        }
+        
+        
+    ]
+}
