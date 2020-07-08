@@ -11,7 +11,9 @@ $color-white: #FFFFFF;
 
 $fontSize-default: 1rem ; 
 
-
+html {
+    background-color: $color-black
+}
 
 a {
     color: $color-primary
@@ -19,3 +21,39 @@ a {
 a:hover {
     color: $color-secondary
 }
+
+.centerMe {
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.ced-btn {
+    background-color: $color-primary ;
+}
+.ced-btn:hover {
+    background-color: $color-secondary ;
+}
+.ced-btn:focus {
+    background-color: $color-primary ;
+}
+
+.ced-popup {
+    color: #2C3E50 ; 
+    font-weight: bold;
+    font-size: $fontSize-default*1.2;
+    
+    border: $color-secondary solid ;
+    background: $color-secondary ;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5); 
+    margin: 0.5rem;
+    padding: 1rem;;
+    
+    width: fit-content;
+}
+
+.ced-contentBlock {
+    padding-bottom: 3rem; 
+  }
