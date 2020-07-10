@@ -110,6 +110,7 @@
         background: $color-primary;
         color: $color-black;
         padding-top: 1rem;
+        overflow-wrap: break-word;
     }
     
     
