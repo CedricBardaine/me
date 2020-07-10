@@ -38,6 +38,11 @@ Vue.use(VueRouter)
     name: 'SkillsList',
     component: () => import('@/views/SkillsList.vue')
   },
+  {
+    path: '/Timeline',
+    name: 'Timeline',
+    component: () => import('@/views/Timeline.vue')
+  },
 ]
 
 const router = new VueRouter({

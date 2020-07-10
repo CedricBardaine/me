@@ -1,4 +1,6 @@
 <template>
+  <!-- //TODO: ajouter l'école, ajouter l'entreprise -->
+  <!-- //TODO: commenter le bouton je recherche une alternance -->
   <div>
     
     <div class="ced-contentBlock">
