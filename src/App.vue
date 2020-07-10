@@ -17,51 +17,32 @@
                         </span> 
                     </router-link> <br>
                 </div>
-                <div class="menuLink">
+                <div class="menuLink" v-for="(page, index) in pages" :key="index">
                     <router-link 
                     class="menuLink" 
-                    v-bind:class="{menuLink_current: currentPage == 'about'}" 
-                    to="/about">
-                    <span v-on:click="currentPage = 'about'">
-                        About
+                    v-bind:class="{menuLink_current: currentPage == page.link}" 
+                    :to="page.link">
+                    <span v-on:click="currentPage = page.link">
+                        {{page.displayedName}}
                     </span>
                 </router-link> <br>
             </div>
-                <div class="menuLink">
-                    <router-link 
-                    class="menuLink" 
-                    v-bind:class="{menuLink_current: currentPage == 'ContactMe'}" 
-                    to="/ContactMe">
-                    <span v-on:click="currentPage = 'ContactMe'">
-                        Contact
-                    </span>
-                </router-link> <br>
-            </div>
-                <div class="menuLink">
-                    <router-link 
-                    class="menuLink" 
-                    v-bind:class="{menuLink_current: currentPage == 'SkillsList'}" 
-                    to="/SkillsList">
-                    <span v-on:click="currentPage = 'SkillsList'">
-                        Compétences
-                    </span>
-                </router-link> <br>
-            </div>
-            
-            <div class="switchBtn">
-                <b-icon @click="switchMode" v-if="isNightModeOn"    class="bigIcon" icon="sun"></b-icon>
-                <b-icon @click="switchMode" v-else                  class="bigIcon iconDark" icon="moon"></b-icon>
-            </div>
-            
-        </b-col>
-        
-        <b-col cols="10" :class="{nightMode: isNightModeOn , lightMode: !isNightModeOn}">
-            <b-container class="currentPage">
-                <router-view/>
-            </b-container>
-        </b-col>
-    </b-row>
-    
+   
+
+<div class="switchBtn">
+    <b-icon @click="switchMode" v-if="isNightModeOn"    class="bigIcon" icon="sun"></b-icon>
+    <b-icon @click="switchMode" v-else                  class="bigIcon iconDark" icon="moon"></b-icon>
+</div>
+
+</b-col>
+
+<b-col cols="10" :class="{nightMode: isNightModeOn , lightMode: !isNightModeOn}">
+    <b-container class="currentPage">
+        <router-view/>
+    </b-container>
+</b-col>
+</b-row>
+
 </b-container>
 </div>
 </template>
@@ -74,6 +55,24 @@
             return {
                 currentPage: 'home',
                 isNightModeOn: true,
+                pages: [
+                {
+                    link: 'about',
+                    displayedName: 'About',
+                },
+                {
+                    link: 'ContactMe',
+                    displayedName: 'Contact',
+                },
+                {
+                    link: 'SkillsList',
+                    displayedName: 'Compétences',
+                },
+                {
+                    link: 'Timeline',
+                    displayedName: 'Timeline professionnelle',
+                },
+                ],
             }
         },
         computed: {
