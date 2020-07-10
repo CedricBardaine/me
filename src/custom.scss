@@ -9,11 +9,12 @@ $color-secondary-light: #f6c957;
 $color-black: #2C3E50;
 $color-white: #FFFFFF;
 
-$fontSize-default: 1rem ; 
+$fontSize-default: 1.1rem ; 
 
-html {
-    background-color: $color-black;   
-}
+// commented : now use the .nightMode or .lightMode classes in App.vue
+// html {
+//     background-color: $color-black;   
+// }
 
 a {
     color: $color-primary
@@ -59,9 +60,10 @@ a:hover {
   }
 
   .ced-skill {
-      color: $color-primary;
-      font-size: $fontSize-default*1.2;
+      color: $color-white;
+      font-size: $fontSize-default*1.333;
 
+      background-color: $color-primary;
       border: $color-primary solid 1px;
       display: inline-block;
       border-radius: 9000px;
