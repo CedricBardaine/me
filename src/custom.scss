@@ -60,36 +60,38 @@ a:hover {
 
 .ced-contentBlock {
     padding-bottom: 3rem; 
-  }
+}
 
-  .ced-skill {
-      color: $color-white;
-      font-size: $fontSize-default*1.333;
+.ced-skill {
+    color: $color-white;
+    font-size: $fontSize-default*1.333;
 
-      background-color: $color-primary;
-      border: $color-primary solid 1px;
-      display: inline-block;
-      border-radius: 9000px;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
+    cursor: context-menu;
 
-      margin: 0.5rem
-  }
+    background-color: $color-primary;
+    border: $color-primary solid 1px;
+    display: inline-block;
+    border-radius: 9000px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 
-  .ced-rangeInput {
-      direction: rtl !important;
-  }
+    margin: 0.5rem
+}
 
-  hr.ced-hr {
-     border: solid 2px;
-     border-radius: 9000px; 
-  }
+.ced-rangeInput {
+    direction: rtl !important;
+}
 
-  .ced-important {
-   color: $color-secondary;
-   font-size: $fontSize-default*1.2;
-   margin: $fontSize-default*0.5;
-   font-weight: bold;
-  }
+hr.ced-hr {
+    border: solid 2px;
+    border-radius: 9000px; 
+}
+
+.ced-important {
+color: $color-secondary;
+font-size: $fontSize-default*1.2;
+margin: $fontSize-default*0.5;
+font-weight: bold;
+}
