@@ -35,12 +35,18 @@ a:hover {
 
 .ced-btn {
     background-color: $color-primary ;
+    transition-duration: 0.25s;
 }
 .ced-btn:hover {
     background-color: $color-secondary ;
+    transition-duration: 0.25s;
 }
 .ced-btn:focus {
     background-color: $color-primary ;
+}
+.ced-btn-forceActive {
+    background-color: $color-secondary !important;
+    transition-duration: 0.25s;
 }
 
 .ced-popup {

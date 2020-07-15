@@ -92,28 +92,24 @@ export default {
             let ret = this.myLanguages.filter( (e) => {
                 return e.level <= this.level ; 
             })
-            console.log(ret);
             return ret ; 
         },
         filteredFramsAndTechs() {
             let ret = this.myFrameworksAndTechnos.filter( (e) => {
                 return e.level <= this.level ; 
             })
-            console.log(ret);
             return ret ; 
         },
         filteredITKnowledge() {
             let ret = this.myITKnowledge.filter( (e) => {
                 return e.level <= this.level ; 
             })
-            console.log(ret);
             return ret ; 
         },
         filteredIDEs() {
             let ret = this.myIDEs.filter( (e) => {
                 return e.level <= this.level ; 
             })
-            console.log(ret);
             return ret ; 
         },
 

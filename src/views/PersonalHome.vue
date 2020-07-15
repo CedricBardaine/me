@@ -24,7 +24,7 @@
     
     
     <div class="ced-contentBlock centerMe">
-      <b-button ref="buttonShowPopup" class="ced-btn" @click="showPopup=!showPopup;">Je recherche une alternance !</b-button>
+      <b-button ref="buttonShowPopup" class="ced-btn" :class="{'ced-btn-forceActive': showPopup}" @click="showPopup=!showPopup;">Je recherche une alternance !</b-button>
       <div ref="dropdownPopup" v-if="showPopup">
         <div class="ced-popup centerMe">
           Je recherche pour septembre 2020 une alternance de deux ans pour mon master développeur FullStack.

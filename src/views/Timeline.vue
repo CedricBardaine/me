@@ -2,9 +2,10 @@
     <div>
         <div class="ced-contentBlock">
             <h1>Mes expériences</h1>
+            <b-button class="ced-btn" :class="{'ced-btn-forceActive': showPros}" @click="showPros = !showPros">expériences pro.</b-button>
         </div>
 
-        <b-row class="ced-contentBlock ced-workRow" v-for="(work, index) in myWorksSorted" :key="index">
+        <b-row class="ced-contentBlock ced-workRow" v-for="(work, index) in myWorksToDisplay" :key="index">
             <b-col>
                 <b-row class="h-50 p-3 ced-workRow-dateRow">{{ displayDate(work.date, work.date_end) }}</b-row>
                 <b-row class="h-50 p-3 ced-workRow-orgRow">{{ work.org }}</b-row>
@@ -42,7 +43,8 @@ import works from "@/assets/works.json";
 export default {
     data() {
         return {
-            myWorks: works.works
+            myWorks: works.works,
+            showPros: false
         }
     },
     computed: {
@@ -56,7 +58,12 @@ export default {
             });
         },
         myWorksPro() {
-            //TODO
+            return this.myWorksSorted.filter( (work) => {
+                return work.pro == true;
+            });
+        },
+        myWorksToDisplay() {
+            return this.showPros ? this.myWorksPro : this.myWorksSorted ; 
         }
     },
     methods: {
@@ -94,7 +101,7 @@ export default {
                         ret = '20'+ startDate_y0_m1_d2[0]; 
                     }
                     else if (startDate_y0_m1_d2[2] === '##') {
-                        ret = displayMonth(startDate_y0_m1_d2[1]) +' '+ '20'+ startDate_y0_m1_d2[0];
+                        ret = this.displayMonth(startDate_y0_m1_d2[1]) +' '+ '20'+ startDate_y0_m1_d2[0];
                     }
                     else {
                         ret = date2;
