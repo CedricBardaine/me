@@ -20,7 +20,10 @@
         </b-row>
       </div>
     </div>
-    
+
+    <div class="ced-contentBlock"> 
+      <MyGitHub/>
+    </div>
     
     
     <div class="ced-contentBlock centerMe">
@@ -59,9 +62,14 @@
   import Popper from 'popper.js'
   Popper.Defaults.modifiers.computeStyle.gpuAcceleration = false
   
+  import MyGitHub from '@/components/MyGitHub.vue';
+  
   export default {
     name: 'PersonalHomeView',
-    
+
+        components: {
+        MyGitHub
+    },
     data() {
       return {
         showPopup: false

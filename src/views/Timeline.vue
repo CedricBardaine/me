@@ -34,13 +34,24 @@
             </b-col>
         </b-row>
 
+         <div class="ced-contentBlock">
+            <h2>Vous souhaitez en voir plus ?</h2>
+            Visitez mon Github ! 
+            <br>
+            <MyGitHub/>
+        </div>
+
     </div>
 </template>
 
 <script>
 import works from "@/assets/works.json";
+import MyGitHub from '@/components/MyGitHub.vue';
 
 export default {
+    components: {
+        MyGitHub
+    },
     data() {
         return {
             myWorks: works.works,
