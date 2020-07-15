@@ -1,4 +1,6 @@
 <template>
+  <!-- //TODO: ajouter l'école, ajouter l'entreprise -->
+  <!-- //TODO: commenter le bouton je recherche une alternance -->
   <div>
     
     <div class="ced-contentBlock">
@@ -18,11 +20,14 @@
         </b-row>
       </div>
     </div>
-    
+
+    <div class="ced-contentBlock"> 
+      <MyGitHub/>
+    </div>
     
     
     <div class="ced-contentBlock centerMe">
-      <b-button ref="buttonShowPopup" class="ced-btn" @click="showPopup=!showPopup;">Je recherche une alternance !</b-button>
+      <b-button ref="buttonShowPopup" class="ced-btn" :class="{'ced-btn-forceActive': showPopup}" @click="showPopup=!showPopup;">Je recherche une alternance !</b-button>
       <div ref="dropdownPopup" v-if="showPopup">
         <div class="ced-popup centerMe">
           Je recherche pour septembre 2020 une alternance de deux ans pour mon master développeur FullStack.
@@ -57,9 +62,14 @@
   import Popper from 'popper.js'
   Popper.Defaults.modifiers.computeStyle.gpuAcceleration = false
   
+  import MyGitHub from '@/components/MyGitHub.vue';
+  
   export default {
     name: 'PersonalHomeView',
-    
+
+        components: {
+        MyGitHub
+    },
     data() {
       return {
         showPopup: false

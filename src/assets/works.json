@@ -1,0 +1,70 @@
+{
+    "works": [
+        {
+            "date": "20-##-##",
+            "date_end": "",
+            "org": "Cegid",
+            "title": "Ajout de tracking à une application",
+            "def": "J'ai implémenté une librairie de tracking au sein d’une application React de l'entreprise Cegid.",
+            "hashtags": ["React"],
+            "source": "",
+            "demo": "",
+            "pro": true
+        },
+        {
+            "date": "19-##-##",
+            "date_end": "20-##-##",
+            "org": "MyDigitalSchool",
+            "title": "Création d’une web application",
+            "def": "Conception et réalisation en équipe d’une application soutenant les artistes émergents. L'équipe était composée d'un designer, de deux marketeuses, et de moi-même en tant que développeur fullstack.",
+            "hashtags": ["Angular","MySQL","NodeJS"],
+            "source": "https://github.com/CedricBardaine/Ad_Astra",
+            "demo": "",
+            "pro": true
+        },
+        {
+            "date": "18-##-##",
+            "date_end": "19-##-##",
+            "org": "Quadisweb",
+            "title": "Développeur en alternance",
+            "def": "Conception et développement d’une application anti fake-news par analyse d’images en utilisant l'API TinEye pour le compte de l'agence Quadisweb.",
+            "hashtags": ["PHP","HTML","CSS","JavaScript","Bootstrap","API externe"],
+            "source": ".",
+            "demo": ".",
+            "pro": true
+        },
+        {
+            "date": "19-##-##",
+            "date_end": "",
+            "org": "IUT de Vannes",
+            "title": "Création d’une plateforme web",
+            "def": "Développeur et chef de projet d’une équipe de 3 étudiants développeurs. Création d’une application de collecte et de visualisation des données des IUT de Bretagne dans un contexte de méthode agile SCRUM.",
+            "hashtags": ["Symfony","Doctrine","API Platform","gestion de projet","SCRUM","méthode agile"],
+            "source": "",
+            "demo": "",
+            "pro": true
+        },
+        {
+            "date": "19-10-##",
+            "date_end": "",
+            "org": "",
+            "title": "Création d’un site météo",
+            "def": "TP web pendant mon DUT dont l'objectif fut de créer un site web basé sur l'API openweathermap.org afin d'afficher les informations météorologiques d'une ville recherchée.",
+            "hashtags": ["PHP","JavaScript","Ajax","Bootstrap"],
+            "source": "https://github.com/CedricBardaine/dut.TPMeteoVille",
+            "demo": "https://cedbdb.ovh/meteoVille",
+            "pro": false
+        },
+        {
+            "date": "17-##-##",
+            "date_end": "",
+            "org": "IUT de Vannes",
+            "title": "Création d’un site web sous WordPress",
+            "def": "Conception et réalisation d’un site web pour un client.",
+            "hashtags": ["WordPress","relation client"],
+            "source": "",
+            "demo": "",
+            "pro": true
+        }
+    ]
+}
