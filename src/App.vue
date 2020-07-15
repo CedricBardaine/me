@@ -37,7 +37,7 @@
 </b-col>
 
 <b-col cols="10" :class="{nightMode: isNightModeOn , lightMode: !isNightModeOn}">
-    <b-container class="currentPage">
+    <b-container fluid class="currentPage">
         <router-view/>
     </b-container>
 </b-col>

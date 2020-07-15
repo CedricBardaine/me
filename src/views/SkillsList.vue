@@ -19,7 +19,7 @@
                 Ainsi que des compétences que j'ai déjà utilisé une ou plusieurs fois. 
             </p>
             <p v-if="level >= 4">
-                Mais aussi compétences que j'ai déjà étudiées, ou pour lesquelles j'ai déjà fait de la veille. 
+                Mais aussi des compétences que j'ai déjà étudiées, ou pour lesquelles j'ai déjà fait de la veille. 
             </p>
         </div>
 
