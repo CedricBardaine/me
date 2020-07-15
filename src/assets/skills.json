@@ -149,6 +149,12 @@
             "label": [""]
         },
         {
+            "name": "Firebase",
+            "faIcon": "",
+            "level": 3,
+            "label": [""]
+        },
+        {
             "name": "Git",
             "faIcon": "git-alt",
             "level": 1,

@@ -1,0 +1,58 @@
+{
+    "works": [
+        {
+            "date": "20-##-##",
+            "date_end": "",
+            "org": "Cegid",
+            "title": "Ajout de tracking à une application",
+            "def": "Implémentation d’une librairie de tracking au sein d’une application.",
+            "hashtags": ["React"],
+            "source": "",
+            "demo": "",
+            "pro": true
+        },
+        {
+            "date": "19-##-##",
+            "date_end": "20-##-##",
+            "org": "MyDigitalSchool",
+            "title": "Création d’une web application",
+            "def": "Conception et réalisation en équipe d’une application soutenant les artistes émergeants.",
+            "hashtags": ["Angular","MySQL","NodeJS"],
+            "source": "https://github.com/CedricBardaine/Ad_Astra",
+            "demo": "",
+            "pro": true
+        },
+        {
+            "date": "18-##-##",
+            "date_end": "19-##-##",
+            "org": "Quadisweb",
+            "title": "Développeur en alternance",
+            "def": "Conception et développement d’une application anti fake-news par analyse d’images.",
+            "hashtags": ["PHP","HTML","CSS","JavaScript","Bootstrap","API externe"],
+            "source": ".",
+            "demo": "."
+        },
+        {
+            "date": "19-##-##",
+            "date_end": "",
+            "org": "IUT de Vannes",
+            "title": "Création d’une plateforme web",
+            "def": "Chef de projet d’une équipe de 3 étudiants. Création d’une application de collecte et de visualisation des données des IUT de Bretagne.",
+            "hashtags": ["Symfony","Doctrine","API Platform","gestion de projet","SCRUM","méthode agile"],
+            "source": "",
+            "demo": "",
+            "pro": true
+        },
+        {
+            "date": "17-##-##",
+            "date_end": "",
+            "org": "IUT de Vannes",
+            "title": "Création d’un site web sous WordPress",
+            "def": "Conception et réalisation d’un site web pour un client.",
+            "hashtags": ["WordPress","relation client"],
+            "source": "",
+            "demo": "",
+            "pro": true
+        }
+    ]
+}
