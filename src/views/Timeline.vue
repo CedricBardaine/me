@@ -1,7 +1,10 @@
 <template>
     <div>
+        <div class="ced-contentBlock">
+            <h1>Mes expériences</h1>
+        </div>
 
-        <b-row class="ced-workRow" v-for="(work, index) in myWorksSorted" :key="index">
+        <b-row class="ced-contentBlock ced-workRow" v-for="(work, index) in myWorksSorted" :key="index">
             <b-col>
                 <b-row class="h-50 p-3 ced-workRow-dateRow">{{ displayDate(work.date, work.date_end) }}</b-row>
                 <b-row class="h-50 p-3 ced-workRow-orgRow">{{ work.org }}</b-row>

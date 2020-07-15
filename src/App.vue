@@ -57,10 +57,6 @@
                 isNightModeOn: true,
                 pages: [
                 {
-                    link: 'about',
-                    displayedName: 'About',
-                },
-                {
                     link: 'ContactMe',
                     displayedName: 'Contact',
                 },
@@ -70,7 +66,7 @@
                 },
                 {
                     link: 'Timeline',
-                    displayedName: 'Timeline professionnelle',
+                    displayedName: 'Expériences',
                 },
                 ],
             }
