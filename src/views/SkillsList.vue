@@ -6,6 +6,7 @@
         </div>
 
         <div class="ced-contentBlock">
+            <p class="centerMe ced-important">{{masteryTxt}}</p><br>
             <input class="ced-rangeInput" type="range" min="1" max="4" step="1" v-model="level">
             
             <p>Au niveau <span class="ced-important">{{level}}</span>, les compétences qui s'affichent sont :</p>
@@ -13,13 +14,13 @@
                 des compétences que je maîtrise particulièrement, je les utilise régulièrement et je suis à mon aise avec elles. 
             </p>
             <p v-if="level >= 2">
-                Des compétences que j'ai déjà bien utilisé dans des projets, mais il se peut que cela date un peu. 
+                <span class="ced-important">&</span> des compétences que j'ai déjà bien utilisées dans des projets. 
             </p>
             <p v-if="level >= 3">
-                Ainsi que des compétences que j'ai déjà utilisé une ou plusieurs fois. 
+                <span class="ced-important">&</span> des compétences que j'ai déjà utilisées une ou plusieurs fois. 
             </p>
             <p v-if="level >= 4">
-                Mais aussi des compétences que j'ai déjà étudiées, ou pour lesquelles j'ai déjà fait de la veille. 
+                <span class="ced-important">&</span> des compétences que j'ai déjà étudiées, ou pour lesquelles j'ai déjà fait de la veille. 
             </p>
         </div>
 
@@ -112,7 +113,16 @@ export default {
             })
             return ret ; 
         },
-
+        masteryTxt() {
+            if(this.level == 1)
+                return "Compétences maîtrisées.";
+            else if(this.level == 2)
+                return "Compétences déjà utilisées dans des projets.";
+            else if(this.level == 3)
+                return "Compétences déjà utilisées.";
+            else if(this.level == 4)
+                return "Toutes mes connaissances.";
+        }
     },
 }
 </script>
