@@ -103,7 +103,7 @@
     margin-left: 0.5rem;
   }
   .lineIcon i:hover {
-    color: $color-secondary;
+    color: $color-primary;
     transition-duration: 0.4s;
   }
   

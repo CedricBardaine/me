@@ -2,7 +2,7 @@
     <div>
         <div class="ced-contentBlock">
             <h1>Mes expériences</h1>
-            <b-button class="ced-btn" :class="{'ced-btn-forceActive': showPros}" @click="showPros = !showPros">expériences pro.</b-button>
+            <b-button class="ced-btn"  @click="showPros = !showPros">{{displayProsTxt}}</b-button>
         </div>
 
         <b-row class="ced-contentBlock ced-workRow" v-for="(work, index) in myWorksToDisplay" :key="index">
@@ -34,7 +34,7 @@
             </b-col>
         </b-row>
 
-         <div class="ced-contentBlock">
+        <div class="ced-contentBlock">
             <h2>Vous souhaitez en voir plus ?</h2>
             Visitez mon Github ! 
             <br>
@@ -75,7 +75,13 @@ export default {
         },
         myWorksToDisplay() {
             return this.showPros ? this.myWorksPro : this.myWorksSorted ; 
-        }
+        },
+        displayProsTxt() {
+            if(this.showPros) 
+            return "expériences pro. seulement";
+            else 
+            return 'toutes les expériences';
+        },
     },
     methods: {
         displayMonth(monthNumber) {

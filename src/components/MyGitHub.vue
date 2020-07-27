@@ -18,7 +18,7 @@ export default {
         font-size: $fontSize-default*2;
     }
     #toMyGitHub:hover {
-        color: $color-secondary;
-        text-decoration: none;
+        // color: $color-secondary;
+        // text-decoration: none;
     }
 </style>

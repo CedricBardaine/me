@@ -17,10 +17,10 @@ $fontSize-default: 1.1rem ;
 // }
 
 a {
-    color: $color-primary
+    color: $color-secondary
 }
 a:hover {
-    color: $color-secondary
+    color: $color-primary
 }
 
 .centerMe {
@@ -34,28 +34,28 @@ a:hover {
 }
 
 .ced-btn {
-    background-color: $color-primary ;
-    transition-duration: 0.25s;
-}
-.ced-btn:hover {
     background-color: $color-secondary ;
     transition-duration: 0.25s;
 }
-.ced-btn:focus {
+.ced-btn:hover {
     background-color: $color-primary ;
+    transition-duration: 0.25s;
+}
+.ced-btn:focus {
+    background-color: $color-secondary ;
 }
 .ced-btn-forceActive {
-    background-color: $color-secondary !important;
+    background-color: $color-primary !important;
     transition-duration: 0.25s;
 }
 
 .ced-popup {
-    color: #2C3E50 ; 
+    // color: #2C3E50 ; 
     font-weight: bold;
     font-size: $fontSize-default*1.2;
     
-    border: $color-secondary solid ;
-    background: $color-secondary ;
+    border: $color-primary solid ;
+    background: $color-primary ;
     border-radius: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5); 
     margin: 0.5rem;
@@ -96,7 +96,7 @@ hr.ced-hr {
 }
 
 .ced-important {
-color: $color-secondary;
+color: $color-primary;
 font-size: $fontSize-default*1.2;
 margin: $fontSize-default*0.5;
 font-weight: bold;
