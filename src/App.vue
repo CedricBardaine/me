@@ -68,6 +68,10 @@
                     link: 'Timeline',
                     displayedName: 'Expériences',
                 },
+                {
+                    link: 'Diplomas',
+                    displayedName: 'Diplômes',
+                },
                 ],
             }
         },

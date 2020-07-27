@@ -35,6 +35,11 @@ Vue.use(VueRouter)
     name: 'Timeline',
     component: () => import('@/views/Timeline.vue')
   },
+  {
+    path: '/Diplomas',
+    name: 'Diplomas',
+    component: () => import('@/views/Diplomas.vue')
+  },
 ]
 
 const router = new VueRouter({
