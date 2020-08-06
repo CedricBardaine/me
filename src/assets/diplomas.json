@@ -1,0 +1,24 @@
+{
+    "diplomas": [
+        {
+            "date": "2019-2020",
+            "title": "Titre professionnel : Concepteur Développeur d'Applications (CDA)",
+            "where": ""
+        },
+        {
+            "date": "2019-2020",
+            "title": "Bachelor Développeur Web",
+            "where": "MyDigitalSchool - Ker Lann"
+        },
+        {
+            "date": "2017-2019",
+            "title": "DUT informatique",
+            "where": "IUT de Vannes"
+        },
+        {
+            "date": "2016-2017",
+            "title": "Bac S option Informatique et Sciences du Numérique",
+            "where": "Lycée St-Joseph de Bruz"
+        }
+    ]
+}

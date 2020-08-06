@@ -8,16 +8,14 @@
 
             <p>
             <font-awesome-icon class="littleIcon"  :icon="['fab', 'linkedin']" />
-            : <a href="https://www.linkedin.com/in/c%C3%A9dric-bardaine-671ba014a/">www.linkedin.com</a>
+            : <a href="https://www.linkedin.com/in/c%C3%A9dric-bardaine-671ba014a/" target="_blank">www.linkedin.com</a>
             </p>
             <p>
             <font-awesome-icon class="littleIcon"  icon="envelope" />
-            : <a href="cedricbardaine@gmail.com">cedricbardaine@gmail.com</a>
+            : <a href="mailto:cedricbardaine@gmail.com" target="_blank">cedricbardaine@gmail.com</a>
             </p>
         </div>
 
-
-        
     </div>
 </template>
 

@@ -7,7 +7,7 @@ $color-primary: #669C5E;
 $color-secondary: #e8A90C;
 $color-secondary-light: #f6c957;
 $color-black: #2C3E50;
-$color-white: #FFFFFF;
+$color-white: #f2f3f4; // Anti-flash white
 
 $fontSize-default: 1.1rem ; 
 
@@ -17,11 +17,12 @@ $fontSize-default: 1.1rem ;
 // }
 
 a {
-    color: $color-primary
-}
-a:hover {
     color: $color-secondary
 }
+a:hover {
+    color: $color-primary
+}
+
 
 .centerMe {
     left: 0;
@@ -33,29 +34,31 @@ a:hover {
     font-size: 1vw !important;
 }
 
+
 .ced-btn {
-    background-color: $color-primary ;
-    transition-duration: 0.25s;
-}
-.ced-btn:hover {
     background-color: $color-secondary ;
     transition-duration: 0.25s;
 }
-.ced-btn:focus {
+.ced-btn:hover {
     background-color: $color-primary ;
+    transition-duration: 0.25s;
+}
+.ced-btn:focus {
+    background-color: $color-secondary ;
 }
 .ced-btn-forceActive {
-    background-color: $color-secondary !important;
+    background-color: $color-primary !important;
     transition-duration: 0.25s;
 }
 
+
 .ced-popup {
-    color: #2C3E50 ; 
+    // color: #2C3E50 ; 
     font-weight: bold;
     font-size: $fontSize-default*1.2;
     
-    border: $color-secondary solid ;
-    background: $color-secondary ;
+    border: $color-primary solid ;
+    background: $color-primary ;
     border-radius: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5); 
     margin: 0.5rem;
@@ -64,9 +67,11 @@ a:hover {
     width: fit-content;
 }
 
+
 .ced-contentBlock {
     padding-bottom: 3rem; 
 }
+
 
 .ced-skill {
     color: $color-white;
@@ -86,18 +91,38 @@ a:hover {
     margin: 0.5rem
 }
 
+
 .ced-rangeInput {
     direction: rtl !important;
 }
+
 
 hr.ced-hr {
     border: solid 2px;
     border-radius: 9000px; 
 }
 
+
 .ced-important {
-color: $color-secondary;
+color: $color-primary;
 font-size: $fontSize-default*1.2;
 margin: $fontSize-default*0.5;
 font-weight: bold;
+}
+
+
+.ced-customRow {
+    font-size: $fontSize-default;
+    padding-bottom:2rem;
+    transition: 1s;
+}
+.ced-customRow:hover {
+    font-size: 1.25em; //multiply by 
+    color: $color-primary;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    transition: 1s;
+}
+.ced-customRow * {
+    align-self: center;
 }
