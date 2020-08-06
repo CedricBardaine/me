@@ -2,6 +2,11 @@
     "diplomas": [
         {
             "date": "2019-2020",
+            "title": "Titre professionnel : Concepteur Développeur d'Applications (CDA)",
+            "where": ""
+        },
+        {
+            "date": "2019-2020",
             "title": "Bachelor Développeur Web",
             "where": "MyDigitalSchool - Ker Lann"
         },
