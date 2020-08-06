@@ -7,7 +7,7 @@ $color-primary: #669C5E;
 $color-secondary: #e8A90C;
 $color-secondary-light: #f6c957;
 $color-black: #2C3E50;
-$color-white: #FFFFFF;
+$color-white: #f2f3f4; // Anti-flash white
 
 $fontSize-default: 1.1rem ; 
 
@@ -23,6 +23,7 @@ a:hover {
     color: $color-primary
 }
 
+
 .centerMe {
     left: 0;
     right: 0;
@@ -32,6 +33,7 @@ a:hover {
 .fitMe {
     font-size: 1vw !important;
 }
+
 
 .ced-btn {
     background-color: $color-secondary ;
@@ -49,6 +51,7 @@ a:hover {
     transition-duration: 0.25s;
 }
 
+
 .ced-popup {
     // color: #2C3E50 ; 
     font-weight: bold;
@@ -64,9 +67,11 @@ a:hover {
     width: fit-content;
 }
 
+
 .ced-contentBlock {
     padding-bottom: 3rem; 
 }
+
 
 .ced-skill {
     color: $color-white;
@@ -86,18 +91,38 @@ a:hover {
     margin: 0.5rem
 }
 
+
 .ced-rangeInput {
     direction: rtl !important;
 }
+
 
 hr.ced-hr {
     border: solid 2px;
     border-radius: 9000px; 
 }
 
+
 .ced-important {
 color: $color-primary;
 font-size: $fontSize-default*1.2;
 margin: $fontSize-default*0.5;
 font-weight: bold;
+}
+
+
+.ced-customRow {
+    font-size: $fontSize-default;
+    padding-bottom:2rem;
+    transition: 1s;
+}
+.ced-customRow:hover {
+    font-size: 1.25em; //multiply by 
+    color: $color-primary;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    transition: 1s;
+}
+.ced-customRow * {
+    align-self: center;
 }

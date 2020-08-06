@@ -5,21 +5,21 @@
             <b-button class="ced-btn"  @click="showPros = !showPros">{{displayProsTxt}}</b-button>
         </div>
 
-        <b-row class="ced-contentBlock ced-workRow" v-for="(work, index) in myWorksToDisplay" :key="index">
+        <b-row class="ced-contentBlock ced-customRow" v-for="(work, index) in myWorksToDisplay" :key="index">
             <b-col>
-                <b-row class="h-50 p-3 ced-workRow-dateRow">{{ displayDate(work.date, work.date_end) }}</b-row>
-                <b-row class="h-50 p-3 ced-workRow-orgRow">{{ work.org }}</b-row>
+                <b-row class="h-50 p-3 ced-customRow-dateRow">{{ displayDate(work.date, work.date_end) }}</b-row>
+                <b-row class="h-50 p-3 ced-customRow-orgRow">{{ work.org }}</b-row>
             </b-col>
             <b-col cols=6>
-                <b-row class="ced-workRow-titleRow">{{ work.title }}</b-row>
-                <b-row class="ced-workRow-defRow">{{ work.def }}</b-row>
+                <b-row class="ced-customRow-titleRow">{{ work.title }}</b-row>
+                <b-row class="ced-customRow-defRow">{{ work.def }}</b-row>
             </b-col>
             <b-col>
                 <div class="ced-skill fitMe" v-for="(hashtag, index) in work.hashtags" :key="index">
                     {{ hashtag }}
                 </div>
             </b-col>
-            <b-col cols=1 class="ced-workRow-links">
+            <b-col cols=1 class="ced-customRow-links">
                 <span v-if="work.source" style="font-size: 1.3em">
                     <a :href="work.source" target="_blank">
                         <font-awesome-icon :icon="['fab', 'git-alt']" />
@@ -155,45 +155,27 @@ export default {
 <style lang="scss" scoped>
     @import "../custom.scss";
 
-    .ced-workRow {
-        font-size: $fontSize-default;
-        padding-bottom:2rem;
-        transition: 1s;
-    }
-    .ced-workRow:hover {
-        font-size: 1.25em; //multiply by 1.1
-        color: $color-primary;
-        margin-top:1rem;
-        margin-bottom:1rem;
-        transition: 1s;
-    }
-    .ced-workRow * {
-        align-self: center;
-    }
-    // .ced-workRow:hover .ced-workRow-links {
-    //     color: $color-secondary !important;
-    //     transition: 1s;
-    // }
-    .ced-workRow-dateRow {
+
+    .ced-customRow-dateRow {
         font-size: $fontSize-default*1.5;
         justify-content: center;;
     }
-    .ced-workRow-orgRow {
+    .ced-customRow-orgRow {
         font-size: $fontSize-default*1.5;
         word-break: break-word;
         justify-content: center;;
         font-weight: bold ;
     }
-    .ced-workRow-titleRow {
+    .ced-customRow-titleRow {
         font-size: $fontSize-default*1.5;
         justify-content: center;;
         padding-bottom: 0.5rem;
     }
-    .ced-workRow-defRow {
+    .ced-customRow-defRow {
         text-align: justify;
 
     }
-    .ced-workRow-links {
+    .ced-customRow-links {
         font-size: $fontSize-default*2 !important;
         text-align: center;
     }
