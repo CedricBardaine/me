@@ -1,6 +1,5 @@
 <template>
   <!-- //TODO: ajouter l'école, ajouter l'entreprise -->
-  <!-- //TODO: commenter le bouton je recherche une alternance -->
   <div>
     
     <div class="ced-contentBlock">
@@ -8,11 +7,18 @@
       <h2>Développeur <br> fullstack</h2>
     </div>
     
+
+    <div class="ced-contentBlock">
+      <p class="ced-compact">
+        Bonjour ! je m'appelle Cédric, je suis développeur en alternance à KERMAP et étudiant en 4e année à MyDigitalSchool. 
+        N'hésitez pas à parcourir mon site à l'aide du menu à gauche afin d'en savoir plus sur mon parcours professionnel et mes compétences.
+      </p>
+    </div>
     
-    
+
     <div class="ced-contentBlock"> 
       <div class="favs">
-        Mes favoris : <br>
+        Mes favoris 2019/2020 : <br>
         <b-row class="lineIcon"> 
           <i> <font-awesome-icon :icon="['fab', 'java']" /> </i>
           <i> <font-awesome-icon :icon="['fab', 'angular']" /> </i>
@@ -20,13 +26,14 @@
         </b-row>
       </div>
     </div>
+    
 
     <div class="ced-contentBlock"> 
       <MyGitHub/>
     </div>
     
     
-    <div class="ced-contentBlock centerMe">
+    <!-- <div class="ced-contentBlock centerMe">
       <b-button ref="buttonShowPopup" class="ced-btn" :class="{'ced-btn-forceActive': showPopup}" @click="showPopup=!showPopup;">Je recherche une alternance !</b-button>
       <div ref="dropdownPopup" v-if="showPopup">
         <div class="ced-popup centerMe">
@@ -35,17 +42,8 @@
           Mon profil est peut-être celui que vous recherchez, contactez moi par LinkedIn !
         </div>
       </div>
-    </div>
-    
-    
-    
-    <div class="ced-contentBlock">
-      <p>
-        <!-- Bonjour,    -->
-      </p>
-    </div>
-    
-    
+    </div> -->
+
     
     <div class="cpr">
       <small>Copyright &copy; <i>Cédric Bardaine</i> 2020</small>
@@ -66,9 +64,9 @@
   
   export default {
     name: 'PersonalHomeView',
-
-        components: {
-        MyGitHub
+    
+    components: {
+      MyGitHub
     },
     data() {
       return {
@@ -93,7 +91,7 @@
   
   .lineIcon {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     justify-content: center;
   }
   .lineIcon i {
