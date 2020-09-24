@@ -1,0 +1,66 @@
+<template>
+
+      <v-navigation-drawer
+        v-model="drawer"
+        color="primary"
+        permanent
+        style="width: unset;"
+        :mini-variant="mini"
+      >
+      <!-- style="width: unset;" to make the width at the minimmum (default width is set by Vuetify)-->
+        <v-list dense nav >
+          <v-list-item
+            v-for="item in items"
+            :key="item.title"
+            link
+            @click="$router.push({name: item.goto})"
+            
+            
+          >
+            <v-list-item-icon class="c-margin-little" >
+              <v-icon >{{ item.icon }}</v-icon>
+            </v-list-item-icon>
+
+            <v-list-item-content>
+              <v-list-item-title >{{ item.title }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-navigation-drawer>
+</template>
+
+<script>
+  export default {
+    data () {
+        return {
+          drawer: true,
+          items: [
+            // { title: '...',
+            // icon: 'mdi-cat',
+            // goto: 'Cat' 
+            // },
+            { title: '',
+            icon: 'mdi-home',
+            goto: 'Home' 
+            },
+            { title: 'Contactez moi',
+            icon: 'mdi-account-box',
+            goto: 'Contact' 
+            },
+          ],
+        }
+      },
+computed: {
+  mini() {
+    console.log(this.$vuetify.breakpoint.mdAndDown);
+    return this.$vuetify.breakpoint.mdAndDown;
+  }
+}
+  }
+</script>
+
+<style >
+  .c-margin-little {
+    margin-right: 1rem !important;
+  }
+</style>
