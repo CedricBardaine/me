@@ -14,8 +14,6 @@
             :key="item.title"
             link
             @click="$router.push({name: item.goto})"
-            
-            
           >
             <v-list-item-icon class="c-margin-little" >
               <v-icon >{{ item.icon }}</v-icon>
@@ -30,37 +28,37 @@
 </template>
 
 <script>
-  export default {
-    data () {
-        return {
-          drawer: true,
-          items: [
-            // { title: '...',
-            // icon: 'mdi-cat',
-            // goto: 'Cat' 
-            // },
-            { title: '',
-            icon: 'mdi-home',
-            goto: 'Home' 
-            },
-            { title: 'Contactez moi',
-            icon: 'mdi-account-box',
-            goto: 'Contact' 
-            },
-            { title: 'Diplômes',
-            icon: 'mdi-certificate',
-            goto: 'Diplomas' 
-            },
-          ],
-        }
-      },
-computed: {
-  mini() {
-    console.log(this.$vuetify.breakpoint.mdAndDown);
-    return this.$vuetify.breakpoint.mdAndDown;
-  }
-}
-  }
+export default {
+  data() {
+    return {
+      drawer: true,
+      items: [
+        // { title: '...',
+        // icon: 'mdi-cat',
+        // goto: 'Cat'
+        // },
+        {title: '',
+          icon: 'mdi-home',
+          goto: 'Home',
+        },
+        {title: 'Contactez moi',
+          icon: 'mdi-account-box',
+          goto: 'Contact',
+        },
+        {title: 'Diplômes',
+          icon: 'mdi-certificate',
+          goto: 'Diplomas',
+        },
+      ],
+    };
+  },
+  computed: {
+    mini() {
+      console.log(this.$vuetify.breakpoint.mdAndDown);
+      return this.$vuetify.breakpoint.mdAndDown;
+    },
+  },
+};
 </script>
 
 <style >

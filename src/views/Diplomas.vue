@@ -2,15 +2,11 @@
   <v-container >
     <v-col>
 
-    
     <v-row justify="center">
       <h1>Mes diplômes</h1>
 
     </v-row>
     <div class="c-spacer"></div>
-
-
-
 
 
       <v-row justify=center>
@@ -38,40 +34,40 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        diplomas: [
+export default {
+  data() {
+    return {
+      diplomas: [
         {
-            date: "2019-2020",
-            title: "Titre professionnel : Concepteur Développeur d'Applications (CDA)",
-            where: ""
+          date: '2019-2020',
+          title: 'Titre professionnel : Concepteur Développeur d\'Applications (CDA)',
+          where: '',
         },
         {
-            date: "2019-2020",
-            title: "Bachelor Développeur Web",
-            where: "MyDigitalSchool - Ker Lann"
+          date: '2019-2020',
+          title: 'Bachelor Développeur Web',
+          where: 'MyDigitalSchool - Ker Lann',
         },
         {
-            date: "2017-2019",
-            title: "DUT informatique",
-            where: "IUT de Vannes"
+          date: '2017-2019',
+          title: 'DUT informatique',
+          where: 'IUT de Vannes',
         },
         {
-            date: "2016-2017",
-            title: "Bac S option Informatique et Sciences du Numérique",
-            where: "Lycée St-Joseph de Bruz"
-        }
-        ],
-      };
-    },
-  };
+          date: '2016-2017',
+          title: 'Bac S option Informatique et Sciences du Numérique',
+          where: 'Lycée St-Joseph de Bruz',
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
 .dateDot .v-timeline-item__inner-dot {
-  width: 5em; 
-  height: 5em; 
+  width: 5em;
+  height: 5em;
 }
-  </style>
+</style>
 
