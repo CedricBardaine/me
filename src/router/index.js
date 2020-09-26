@@ -11,7 +11,7 @@ const routes = [
     component: Home
   },
   {
-    path: '',
+    path: '/cat',
     name: 'Cat',
     component: () => import('@/components/Cat.vue')
   },
@@ -30,11 +30,11 @@ const routes = [
   //   name: 'Timeline',
   //   component: () => import('@/views/Timeline.vue')
   // },
-  // {
-  //   path: '/Diplomas',
-  //   name: 'Diplomas',
-  //   component: () => import('@/views/Diplomas.vue')
-  // },
+  {
+    path: '/Diplomas',
+    name: 'Diplomas',
+    component: () => import('@/views/Diplomas.vue')
+  },
 ]
 
 const router = new VueRouter({

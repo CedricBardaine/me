@@ -47,6 +47,10 @@
             icon: 'mdi-account-box',
             goto: 'Contact' 
             },
+            { title: 'Diplômes',
+            icon: 'mdi-certificate',
+            goto: 'Diplomas' 
+            },
           ],
         }
       },
