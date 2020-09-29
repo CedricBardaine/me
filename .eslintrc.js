@@ -19,5 +19,7 @@ module.exports = {
     'vue',
   ],
   'rules': {
+    'max-len': [0, {'code': 120}],
+    'indent': ['warn', 2],
   },
 };
