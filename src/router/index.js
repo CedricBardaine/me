@@ -20,11 +20,11 @@ const routes = [
     name: 'Contact',
     component: () => import('@/views/ContactMe.vue')
   },
-  // {
-  //   path: '/SkillsList',
-  //   name: 'SkillsList',
-  //   component: () => import('@/views/SkillsList.vue')
-  // },
+  {
+    path: '/SkillsList',
+    name: 'SkillsList',
+    component: () => import('@/views/SkillsList.vue')
+  },
   // {
   //   path: '/Timeline',
   //   name: 'Timeline',

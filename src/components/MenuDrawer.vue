@@ -6,6 +6,7 @@
         permanent
         style="width: unset;"
         :mini-variant="mini"
+        dark
       >
       <!-- style="width: unset;" to make the width at the minimmum (default width is set by Vuetify)-->
         <v-list dense nav >
@@ -48,6 +49,10 @@ export default {
         {title: 'Diplômes',
           icon: 'mdi-certificate',
           goto: 'Diplomas',
+        },
+        {title: 'Compétences',
+          icon: 'mdi-head-snowflake ',
+          goto: 'SkillsList',
         },
       ],
     };
