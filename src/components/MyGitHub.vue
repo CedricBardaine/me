@@ -1,24 +1,20 @@
 <template>
-    <a id="toMyGitHub" href="https://github.com/CedricBardaine" target="_blank">
-        <font-awesome-icon :icon="['fab', 'github']" />
-        : CedricBardaine
-    </a>
+    <v-container>
+        <v-row  justify="center" align="center" style="font-size: 2em" >
+                <v-btn @click="redirect()" color="secondary" rounded>
+                    <v-icon  style="font-size: 2em ; margin-right: 0.25em">mdi-git</v-icon>
+                    : CedricBardaine
+                </v-btn>
+        </v-row>
+    </v-container>
 </template>
 
 <script>
 export default {
-    
+    methods: {
+        redirect() {
+            window.open('https://github.com/CedricBardaine', '_blank');  
+        }
+    }
 }
 </script>
-
-<style lang="scss">
-    @import "@/custom.scss";
-
-    #toMyGitHub {
-        font-size: $fontSize-default*2;
-    }
-    #toMyGitHub:hover {
-        // color: $color-secondary;
-        // text-decoration: none;
-    }
-</style>
