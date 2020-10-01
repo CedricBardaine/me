@@ -19,7 +19,7 @@
         :icon="'mdi-certificate'"
 
       >
-        <template v-slot:opposite v-if="!diploma.title">
+        <template v-slot:opposite v-if="diploma.title">
           <span>{{diploma.date}}</span>
         </template>
         <v-card class="elevation-2" v-if="!!diploma.title">
@@ -39,22 +39,22 @@ export default {
     return {
       diplomas: [
         {
-          date: '2019-2020',
+          date: '2019 - 2020',
           title: 'Titre professionnel : Concepteur Développeur d\'Applications (CDA)',
           where: '',
         },
         {
-          date: '2019-2020',
+          date: '2019 - 2020',
           title: 'Bachelor Développeur Web',
           where: 'MyDigitalSchool - Ker Lann',
         },
         {
-          date: '2017-2019',
+          date: '2017 - 2019',
           title: 'DUT informatique',
           where: 'IUT de Vannes',
         },
         {
-          date: '2016-2017',
+          date: '2016 - 2017',
           title: 'Bac S option Informatique et Sciences du Numérique',
           where: 'Lycée St-Joseph de Bruz',
         },
