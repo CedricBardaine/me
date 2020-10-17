@@ -4,8 +4,7 @@
         v-model="drawer"
         color="primary"
         permanent
-        style="width: unset;"
-        :mini-variant="mini"
+        :mini-variant="$vuetify.breakpoint.xs"
         dark
       >
       <!-- style="width: unset;" to make the width at the minimmum (default width is set by Vuetify)-->
@@ -58,10 +57,6 @@ export default {
     };
   },
   computed: {
-    mini() {
-      console.log(this.$vuetify.breakpoint.mdAndDown);
-      return this.$vuetify.breakpoint.mdAndDown;
-    },
   },
 };
 </script>
