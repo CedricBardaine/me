@@ -21,13 +21,10 @@ class Service {
       })
       .catch((err) => {
         this.myGitHubInfos.error = err ;  
-        this.myGitHubInfos.gH_API_response  = reposInCase ; 
-        console.log("GitHub API fetched : error");
+        this.myGitHubInfos.gH_API_response = {data: reposInCase} ; 
+        console.log("GitHub API fetched : error", this.myGitHubInfos.error)
       })
       .finally(() => {
-
-        // processing to set this.myGitHubInfos.myRepos
-        // ... 
         for (let i = 0; i < this.myGitHubInfos.gH_API_response.data.length; i++) {
           let aRepo = {}; 
           aRepo.id = this.myGitHubInfos.gH_API_response.data[i].id
