@@ -8,12 +8,16 @@
         dark
       >
       <!-- style="width: unset;" to make the width at the minimmum (default width is set by Vuetify)-->
-        <v-list dense nav >
+        <v-list dense nav>
           <v-list-item
             v-for="item in items"
             :key="item.title"
             link
-            @click="$router.push({name: item.goto})"
+            @click="
+              $router.history.current.name != item.goto ?
+              $router.push({name: item.goto}) : 
+              ''
+            "
           >
             <v-list-item-icon class="c-margin-little" >
               <v-icon >{{ item.icon }}</v-icon>
