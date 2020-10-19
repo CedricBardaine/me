@@ -23,7 +23,7 @@
     
     <br>
     
-    <p>Au niveau  <v-btn fab x-small color="secondary" style="margin-right:0.5rem; margin-left:0.5rem">{{level}}</v-btn>  les compétences qui s'affichent sont :</p>
+    <p>Au niveau  <v-btn fab x-small color="secondary"  class="mx-2">{{level}}</v-btn>  les compétences qui s'affichent sont :</p>
     <p v-if="level >= 1">
       des compétences que je maîtrise particulièrement, je les utilise régulièrement et je suis à mon aise avec elles.
     </p>
