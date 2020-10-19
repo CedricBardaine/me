@@ -35,6 +35,11 @@ const routes = [
     name: 'Diplomas',
     component: () => import('@/views/Diplomas.vue')
   },
+  {
+    path: '/MyGitHub',
+    name: 'MyGitHub',
+    component: () => import('@/views/MyGitHubRepo.vue')
+  },
 ]
 
 const router = new VueRouter({

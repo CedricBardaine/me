@@ -57,10 +57,12 @@ export default {
           icon: 'mdi-head-snowflake ',
           goto: 'SkillsList',
         },
+        {title: 'Mon GitHub',
+          icon: 'mdi-github',
+          goto: 'MyGitHub',
+        },
       ],
     };
-  },
-  computed: {
   },
 };
 </script>
