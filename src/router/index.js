@@ -1,19 +1,14 @@
 import Vue from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
-import PersonalHomeView from '@/views/PersonalHome.vue'
-
-
-
-
-
+import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-  const routes: Array<RouteConfig> = [
+const routes = [
   {
     path: '/',
-    name: 'PersonalHomeView',
-    component: PersonalHomeView
+    name: 'Home',
+    component: Home
   },
   {
     path: '/cat',
@@ -21,8 +16,8 @@ Vue.use(VueRouter)
     component: () => import('@/components/Cat.vue')
   },
   {
-    path: '/ContactMe',
-    name: 'ContactMe',
+    path: '',
+    name: 'Contact',
     component: () => import('@/views/ContactMe.vue')
   },
   {
@@ -30,15 +25,20 @@ Vue.use(VueRouter)
     name: 'SkillsList',
     component: () => import('@/views/SkillsList.vue')
   },
-  {
-    path: '/Timeline',
-    name: 'Timeline',
-    component: () => import('@/views/Timeline.vue')
-  },
+  // {
+  //   path: '/Timeline',
+  //   name: 'Timeline',
+  //   component: () => import('@/views/Timeline.vue')
+  // },
   {
     path: '/Diplomas',
     name: 'Diplomas',
     component: () => import('@/views/Diplomas.vue')
+  },
+  {
+    path: '/MyGitHub',
+    name: 'MyGitHub',
+    component: () => import('@/views/MyGitHubRepo.vue')
   },
 ]
 
