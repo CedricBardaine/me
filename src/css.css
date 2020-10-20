@@ -1,0 +1,26 @@
+/* 01/10/2020
+light: {
+    primary: '#669C5E',
+    secondary: '#e8A90C',
+    secondaryLight: '#f6c957',
+    customBackground: '#f2f3f4',
+    
+    error: '#FF5252',
+},
+dark: {
+    primary: '#669C5E',
+    secondary: '#e8A90C',
+    secondaryLight: '#f6c957',
+    customBackground: '#2C3E50',
+    
+    error: '#FF5252',
+},
+*/
+
+.c-spacer {
+    height: 2em !important;
+}
+
+a {
+    color: #e8A90C !important;
+}

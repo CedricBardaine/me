@@ -1,21 +1,5 @@
 <template>
-    <div class="famousCatIcon">
-            <font-awesome-icon icon="cat" />
-    </div>
+    <v-col justify="center" align="center" >
+        <v-icon large color="primary" >mdi-cat</v-icon>
+    </v-col>
 </template>
-
-
-
-
-<style lang="scss" scoped>
-    @import "../custom.scss";
-
-    .famousCatIcon {
-        color: $color-primary;
-        font-size: 20rem;
-    }
-</style>
-
-
-
-
